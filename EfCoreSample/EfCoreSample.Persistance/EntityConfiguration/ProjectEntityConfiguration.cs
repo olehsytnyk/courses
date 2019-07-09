@@ -16,8 +16,8 @@ namespace EfCoreSample.Persistance.EntityConfiguration
 
             projectBuilder
                 .HasOne(p => p.Employee)
-                .WithMany(p => p.Projects)
-                .HasForeignKey(p => p.EmployeeId);
+                .WithMany(p => p.Projects);
+
 
 
             projectBuilder.Property(p => p.Title).HasMaxLength(128);

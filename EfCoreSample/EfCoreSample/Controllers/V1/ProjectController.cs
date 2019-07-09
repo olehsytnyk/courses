@@ -32,7 +32,7 @@ namespace EfCoreSample.Controllers.V1
         {
             var post = new Post { Name = postRequest.Name };
 
-            await _postService.CreatePostAsync(post);
+            await _postService.CreatePost(post);
 
             var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
             var locationUri = baseUrl + "/" + ApiRoutes.Posts.Get.Replace("{postId}", post.Id.ToString());
@@ -42,9 +42,9 @@ namespace EfCoreSample.Controllers.V1
         }
 
         [HttpGet(ApiRoutes.Posts.Get)]
-        public async Task<IActionResult> Get([FromBody] Guid postId)
+        public async Task<IActionResult> Get([FromRoute] Guid postId)
         {
-            var post = _postService.GetPostByIdAsync(postId);
+            var post = await _postService.GetPostById(postId);
 
             if (post == null)
                 return NotFound();
@@ -53,7 +53,7 @@ namespace EfCoreSample.Controllers.V1
         }
 
         [HttpPut(ApiRoutes.Posts.Update)]
-        public async Task<IActionResult> Update([FromBody] Guid postId,[FromBody] UpdatePostRequest request )
+        public async Task<IActionResult> Update([FromRoute] Guid postId,[FromBody] UpdatePostRequest request )
         {
             var post = new Post
             {
@@ -61,7 +61,7 @@ namespace EfCoreSample.Controllers.V1
                 Name = request.Name
             };
 
-            var updated = await _postService.UpdatePostAsync(post);
+            var updated = await _postService.UpdatePost(post);
 
             if (updated)
                 return Ok(post);
@@ -70,9 +70,9 @@ namespace EfCoreSample.Controllers.V1
         }
 
         [HttpDelete(ApiRoutes.Posts.Delete)]
-        public async Task<IActionResult> Delete([FromBody]Guid postId)
+        public async Task<IActionResult> Delete([FromRoute]Guid postId)
         {
-            var deleted = await _postService.DeletePostAsync(postId);
+            var deleted = await _postService.DeletePost(postId);
 
             if (deleted)
                 return NoContent();

@@ -17,33 +17,37 @@ namespace EfCoreSample.Services
             _dataContext = dataContext;
         }
 
-        public async Task<List<Post>> GetPostsAsync()
+        public async Task<List<Post>> GetPosts()
         {
             return await _dataContext.Posts.ToListAsync();
         }
 
-        public async Task<Post> GetPostByIdAsync(Guid postId)
+        public async Task<Post> GetPostById(Guid postId)
         {
             return await _dataContext.Posts.SingleOrDefaultAsync(x => x.Id == postId);
         }
 
-        public async Task<bool> CreatePostAsync(Post post)
+        public async Task<bool> CreatePost(Post post)
         {
             await _dataContext.Posts.AddAsync(post);
             var created = await _dataContext.SaveChangesAsync();
             return created > 0;
         }
 
-        public async Task<bool> UpdatePostAsync(Post postToUpdate)
+        public async Task<bool> UpdatePost(Post postToUpdate)
         {
             _dataContext.Posts.Update(postToUpdate);
             var updated = await _dataContext.SaveChangesAsync();
             return updated > 0;
         }
 
-        public async Task<bool> DeletePostAsync(Guid postId)
+        public async Task<bool> DeletePost(Guid postId)
         {
-            var post = await GetPostByIdAsync(postId);
+            var post = await GetPostById(postId);
+
+            if (post == null)
+                return false;
+
             _dataContext.Posts.Remove(post);
             var deleted = await _dataContext.SaveChangesAsync();
             return deleted > 0;

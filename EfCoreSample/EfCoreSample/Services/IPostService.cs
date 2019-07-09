@@ -7,14 +7,14 @@ namespace EfCoreSample.Services
 {
     public interface IPostService
     {
-        Task<List<Post>> GetPostsAsync();
+        Task<List<Post>> GetPosts();
 
-        Task<bool> CreatePostAsync(Post post);
+        Task<bool> CreatePost(Post post);
 
-        Task<Post> GetPostByIdAsync(Guid postId);
+        Task<Post> GetPostById(Guid postId);
 
-        Task<bool> UpdatePostAsync(Post postToUpdate);
+        Task<bool> UpdatePost(Post postToUpdate);
 
-        Task<bool> DeletePostAsync(Guid postId);
+        Task<bool> DeletePost(Guid postId);
     }
 }
