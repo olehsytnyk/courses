@@ -48,21 +48,6 @@ namespace EfCoreSample.Services
             var deleted = await _dataContext.SaveChangesAsync();
             return deleted > 0;
         }
-
-        //private readonly List<Post> _posts;
-
-        //public PostService()
-        //{
-        //    _posts = new List<Post>();
-        //    for (var i = 0; i < 5; i++)
-        //    {
-        //        _posts.Add(new Post
-        //        {
-        //            Id = Guid.NewGuid(),
-        //            Name = $"Post Name {i}"
-        //        });
-        //    }
-        //}
     }
 }
 

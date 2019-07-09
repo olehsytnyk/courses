@@ -17,8 +17,4 @@
     <ProjectReference Include="..\EfCoreSample.Persistance\EfCoreSample.Persistance.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Domain\" />
-  </ItemGroup>
-
 </Project>
