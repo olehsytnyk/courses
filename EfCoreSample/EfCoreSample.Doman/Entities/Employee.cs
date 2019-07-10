@@ -12,7 +12,7 @@ namespace EfCoreSample.Doman
 
         public string LastName { get; set; }
 
-        public long? ReportsToId { get; set; }
+        public long ReportsToId { get; set; }
 
         public Employee ReportsTo { get; set; }
 

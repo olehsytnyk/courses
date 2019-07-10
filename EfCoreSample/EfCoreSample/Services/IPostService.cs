@@ -1,4 +1,4 @@
-﻿using EfCoreSample.Domain;
+﻿using EfCoreSample.Doman.Entities;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -7,14 +7,15 @@ namespace EfCoreSample.Services
 {
     public interface IPostService
     {
-        Task<List<Post>> GetPosts();
+        Task<List<Project>> GetPosts();
 
-        Task<bool> CreatePost(Post post);
+        Task<bool> CreatePost(Project post);
 
-        Task<Post> GetPostById(Guid postId);
+        Task<Project> GetPostById(Guid postId);
 
-        Task<bool> UpdatePost(Post postToUpdate);
+        Task<bool> UpdatePost(Project postToUpdate);
 
         Task<bool> DeletePost(Guid postId);
+
     }
 }

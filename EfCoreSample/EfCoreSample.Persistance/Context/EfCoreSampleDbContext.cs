@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using EfCoreSample.Domain;
-using EfCoreSample.Doman;
+﻿using EfCoreSample.Doman;
 using EfCoreSample.Doman.Entities;
 using EfCoreSample.Persistance.EntityConfiguration;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +15,7 @@ namespace EfCoreSample.Persistance
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Project> Projects { get; set; }
-        public DbSet<Post>Posts { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -52,13 +52,13 @@ namespace EfCoreSample.Persistance.EntityConfiguration
             projectBuilder.HasData(
                 new Project()
                 {
-                    Id = 1,
+                    Id = Guid.NewGuid(),
                     Title = "Title",
                     Discription = "Discription"
                 },
                 new Project()
                 {
-                    Id = 2,
+                    Id = Guid.NewGuid(),
                     Title = "Title2",
                     Discription = "Discription2"
                 });

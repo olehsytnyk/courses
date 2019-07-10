@@ -1,9 +1,9 @@
-﻿using EfCoreSample.Domain;
+﻿using EfCoreSample.Doman.Entities;
 using EfCoreSample.Persistance;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Data;
 using System.Threading.Tasks;
 
 namespace EfCoreSample.Services
@@ -17,26 +17,26 @@ namespace EfCoreSample.Services
             _dataContext = dataContext;
         }
 
-        public async Task<List<Post>> GetPosts()
+        public async Task<List<Project>> GetPosts()
         {
-            return await _dataContext.Posts.ToListAsync();
+            return await _dataContext.Projects.ToListAsync();
         }
 
-        public async Task<Post> GetPostById(Guid postId)
+        public async Task<Project> GetPostById(Guid Id)
         {
-            return await _dataContext.Posts.SingleOrDefaultAsync(x => x.Id == postId);
+            return await _dataContext.Projects.SingleOrDefaultAsync(x => x.Id == Id);
         }
 
-        public async Task<bool> CreatePost(Post post)
+        public async Task<bool> CreatePost(Project post)
         {
-            await _dataContext.Posts.AddAsync(post);
+            await _dataContext.Projects.AddAsync(post);
             var created = await _dataContext.SaveChangesAsync();
             return created > 0;
         }
 
-        public async Task<bool> UpdatePost(Post postToUpdate)
+        public async Task<bool> UpdatePost(Project postToUpdate)
         {
-            _dataContext.Posts.Update(postToUpdate);
+            _dataContext.Projects.Update(postToUpdate);
             var updated = await _dataContext.SaveChangesAsync();
             return updated > 0;
         }
@@ -48,7 +48,7 @@ namespace EfCoreSample.Services
             if (post == null)
                 return false;
 
-            _dataContext.Posts.Remove(post);
+            _dataContext.Projects.Remove(post);
             var deleted = await _dataContext.SaveChangesAsync();
             return deleted > 0;
         }

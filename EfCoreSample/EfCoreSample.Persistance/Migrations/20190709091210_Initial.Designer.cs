@@ -3,19 +3,33 @@ using System;
 using EfCoreSample.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EfCoreSample.Persistance.Migrations
 {
     [DbContext(typeof(EfCoreSampleDbContext))]
-    partial class EfCoreSampleDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190709091210_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            modelBuilder.Entity("EfCoreSample.Domain.Post", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Posts");
+                });
 
             modelBuilder.Entity("EfCoreSample.Doman.Address", b =>
                 {
@@ -90,7 +104,7 @@ namespace EfCoreSample.Persistance.Migrations
                     b.Property<string>("LastName")
                         .HasMaxLength(128);
 
-                    b.Property<long>("ReportsToId");
+                    b.Property<long?>("ReportsToId");
 
                     b.HasKey("Id");
 
@@ -104,16 +118,14 @@ namespace EfCoreSample.Persistance.Migrations
                             Id = 1L,
                             FirstName = "Petro",
                             LastModified = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastName = "Petrenko",
-                            ReportsToId = 0L
+                            LastName = "Petrenko"
                         },
                         new
                         {
                             Id = 2L,
                             FirstName = "Olga",
                             LastModified = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            LastName = "Petrenko",
-                            ReportsToId = 0L
+                            LastName = "Petrenko"
                         });
                 });
 
@@ -132,7 +144,7 @@ namespace EfCoreSample.Persistance.Migrations
 
             modelBuilder.Entity("EfCoreSample.Doman.Entities.Project", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Discription")
@@ -172,7 +184,7 @@ namespace EfCoreSample.Persistance.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3c5afe8a-b85d-41d9-918f-326de14232bc"),
+                            Id = 1,
                             Discription = "Discription",
                             EmployeeId = 0L,
                             EndTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -183,7 +195,7 @@ namespace EfCoreSample.Persistance.Migrations
                         },
                         new
                         {
-                            Id = new Guid("51b5a781-8d4c-411c-a8f9-0926eb1d17a3"),
+                            Id = 2,
                             Discription = "Discription2",
                             EmployeeId = 0L,
                             EndTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -206,8 +218,7 @@ namespace EfCoreSample.Persistance.Migrations
                 {
                     b.HasOne("EfCoreSample.Doman.Employee", "ReportsTo")
                         .WithMany("ReportsToEmployees")
-                        .HasForeignKey("ReportsToId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ReportsToId");
                 });
 
             modelBuilder.Entity("EfCoreSample.Doman.EmployeeDepartment", b =>
