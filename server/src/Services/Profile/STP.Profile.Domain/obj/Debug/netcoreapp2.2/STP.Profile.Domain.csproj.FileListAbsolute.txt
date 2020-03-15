@@ -1,0 +1,14 @@
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Profile.Domain.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Profile.Domain.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Profile.Domain.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Interfaces.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Interfaces.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.csproj.CopyComplete
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\obj\Debug\netcoreapp2.2\STP.Profile.Domain.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Messages.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Profile\STP.Profile.Domain\bin\Debug\netcoreapp2.2\STP.Messages.pdb

@@ -1,0 +1,12 @@
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\bin\Debug\netstandard2.0\STP.RabbitMq.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\bin\Debug\netstandard2.0\STP.RabbitMq.dll
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\bin\Debug\netstandard2.0\STP.RabbitMq.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\bin\Debug\netstandard2.0\STP.Interfaces.dll
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\bin\Debug\netstandard2.0\STP.Interfaces.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.csproj.CopyComplete
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.dll
+C:\Users\olexd\Desktop\Magnise\server\src\STP.RabbitMq\obj\Debug\netstandard2.0\STP.RabbitMq.pdb

@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+  stp.build:
+    image: stp.build
+    build:
+      context: .
+      dockerfile: Dockerfile
+      
+  identity:
+    image: identity
+    build:
+      context: .
+      dockerfile: src/Services/Identity/STP.Identity.API/Dockerfile
+    depends_on:
+      - stp.build
+
+  markets:
+    image: markets
+    build:
+      context: .
+      dockerfile: src/Services/Markets/STP.Markets.API/Dockerfile
+    depends_on:
+      - stp.build
+
+  datafeed:
+    image: datafeed
+    build:
+      context: .
+      dockerfile: src/Services/Datafeed/STP.Datafeed.API/Dockerfile
+    depends_on:
+      - stp.build
+      
+  profile:
+    image: profile
+    build:
+      context: .
+      dockerfile: src/Services/Profile/STP.Profile.API/Dockerfile
+    depends_on:
+      - stp.build
+
+  realtime:
+    image: realtime
+    build:
+      context: .
+      dockerfile: src/Services/Realtime/STP.Realtime.API/Dockerfile
+    depends_on:
+      - stp.build

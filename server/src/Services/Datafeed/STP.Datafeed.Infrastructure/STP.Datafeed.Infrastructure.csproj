@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Validation - Copy\**" />
+    <EmbeddedResource Remove="Validation - Copy\**" />
+    <None Remove="Validation - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\STP.Infrastructure\STP.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\STP.RabbitMq\STP.RabbitMq.csproj" />
+    <ProjectReference Include="..\STP.Datafeed.Application\STP.Datafeed.Application.csproj" />
+  </ItemGroup>
+
+</Project>

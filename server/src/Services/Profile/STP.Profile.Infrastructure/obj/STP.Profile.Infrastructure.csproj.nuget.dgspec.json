@@ -1,0 +1,847 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Infrastructure\\STP.Profile.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Datafeed\\STP.Datafeed.Application\\STP.Datafeed.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Datafeed\\STP.Datafeed.Application\\STP.Datafeed.Application.csproj",
+        "projectName": "STP.Datafeed.Application",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Datafeed\\STP.Datafeed.Application\\STP.Datafeed.Application.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Datafeed\\STP.Datafeed.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj",
+        "projectName": "STP.Profile.Domain",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Infrastructure\\STP.Profile.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Infrastructure\\STP.Profile.Infrastructure.csproj",
+        "projectName": "STP.Profile.Infrastructure",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Infrastructure\\STP.Profile.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Persistence\\STP.Profile.Persistence.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Persistence\\STP.Profile.Persistence.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.UpdateService\\STP.Profile.UpdateService.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.UpdateService\\STP.Profile.UpdateService.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj",
+        "projectName": "STP.Profile.Interfaces",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Persistence\\STP.Profile.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Persistence\\STP.Profile.Persistence.csproj",
+        "projectName": "STP.Profile.Persistence",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Persistence\\STP.Profile.Persistence.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.UpdateService\\STP.Profile.UpdateService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.UpdateService\\STP.Profile.UpdateService.csproj",
+        "projectName": "STP.Profile.UpdateService",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.UpdateService\\STP.Profile.UpdateService.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.UpdateService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Domain\\STP.Profile.Domain.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Profile\\STP.Profile.Interfaces\\STP.Profile.Interfaces.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj",
+        "projectName": "STP.Common",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj",
+        "projectName": "STP.Infrastructure",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\STP.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Datafeed\\STP.Datafeed.Application\\STP.Datafeed.Application.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\Services\\Datafeed\\STP.Datafeed.Application\\STP.Datafeed.Application.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Common\\STP.Common.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              },
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.RabbitMq\\STP.RabbitMq.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.RabbitMq\\STP.RabbitMq.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.ServiceFabric.Services": {
+              "target": "Package",
+              "version": "[3.4.641, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.Telegram": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj",
+        "projectName": "STP.Interfaces",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj",
+        "projectName": "STP.Messages",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\STP.Messages.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Messages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.RabbitMq\\STP.RabbitMq.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.RabbitMq\\STP.RabbitMq.csproj",
+        "projectName": "STP.RabbitMq",
+        "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.RabbitMq\\STP.RabbitMq.csproj",
+        "packagesPath": "C:\\Users\\olexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.RabbitMq\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\olexd\\Desktop\\Magnise\\server\\src\\STP.Interfaces\\STP.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

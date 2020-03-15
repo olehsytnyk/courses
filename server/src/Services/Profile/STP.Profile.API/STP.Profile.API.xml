@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STP.Profile.API</name>
+    </assembly>
+    <members>
+        <member name="M:STP.Profile.API.Controllers.OrderController.GetAsync(STP.Profile.Domain.FilterModels.OrderFilterModel)">
+            <summary>
+            Get a list of orders by a specific filter. 
+            Returns first 10 orders by default.
+            </summary>
+            <param name="filter">The criteria by which orders are searched. 
+                All criteria in the filter are optional.
+            </param>
+            <response code="200">Returns the array of orders</response>
+            <response code="404">If the orders was not found</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.OrderController.GetAsync(System.Int64)">
+             <summary>
+             Return order by a certain id 
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /orders/{id}
+                 
+             </remarks>
+             <param name="id">order's id</param>
+             <returns>order model</returns>
+             <response code="200">If successful returned order</response>
+             <response code="404">If not found order</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.OrderController.PostAsync(STP.Profile.Domain.DTO.Order.PostOrderDTO)">
+             <summary>
+             Create new order
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /orders
+                 {
+                     "marketId": 123456,
+                     "quantity": 10,
+                     "action": 1
+                 }
+                 
+             </remarks>
+             <param name="orderDTO"> order's model</param>
+             <returns>Newly created order</returns>
+             <response code="201">If successful created order</response>
+             <response code="400">If didn't create order</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.PositionController.GetOpenedAsync(STP.Profile.Domain.FilterModels.PositionFilterModel)">
+            <summary>
+            Get a list of opened (Long and Short) positions by a specific filter. 
+            Returns first 10 positions by default.
+            </summary>
+            <param name="filter">The criteria by which positions are searched. 
+                All criteria in the filter are optional.
+            </param>
+            <response code="200">Returns the array of positions</response>
+            <response code="404">If the positions was not found</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.PositionController.GetHistoryAsync(STP.Profile.Domain.FilterModels.PositionFilterModel)">
+            <summary>
+            Get a list of history (Flat) positions by a specific filter. 
+            Returns first 10 positions by default.
+            </summary>
+            <param name="filter">The criteria by which positions are searched. 
+                All criteria in the filter are optional.
+            </param>
+            <response code="200">Returns the array of positions</response>
+            <response code="404">If the positions was not found</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.PositionController.GetAsync(System.Int64)">
+             <summary>
+             Return position by a certain id 
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /positions/{id}
+                 
+             </remarks>
+             <param name="id">position's id</param>
+             <returns>position model</returns>
+             <response code="200">If successful returned position</response>
+             <response code="404">If not found position</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.PositionController.Delete(System.Int32)">
+             <summary>
+             Delete position
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /positions/{id}
+                 
+             </remarks>
+             <param name="id"> position's id</param>
+             <returns>Status code</returns>
+             <response code="204">If successful deleted position</response>
+             <response code="404">If not found position</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.TraderInfoController.GetAllAsync(STP.Profile.Domain.FilterModels.TraderInfoFilterModel)">
+            <summary>
+            Get a list of Trader Infos. 
+            Returns first 10 positions by default.
+            </summary>
+            <param name="filter">The criteria by which Trader Infos are searched. 
+                All criteria in the filter are optional.
+            </param>
+            <returns>list of Trader Infos</returns>
+            <response code="200">Returns the array of Trader Infos</response>
+            <response code="4406">If the Trader Infos was not found</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.TraderInfoController.GetByFilterAsync(STP.Profile.Domain.FilterModels.TraderInfoFilterModel)">
+            <summary>
+            Get a list of Trader Infos by a specific filter. 
+            Returns first 10 positions by default.
+            </summary>
+            <param name="filter">The criteria by which Trader Infos are searched. 
+                All criteria in the filter are optional.
+            </param>
+            <returns>list of Trader Infos</returns>
+            <response code="200">Returns the array of Trader Infos</response>
+            <response code="4406">If the Trader Infos was not found</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.TraderInfoController.GetByCopyCountAsync(STP.Profile.Domain.FilterModels.BaseFilterModel)">
+            <summary>
+            Get a list of Trader Infos in descending order sorted by CopyCount. 
+            Returns first 10 positions by default.
+            </summary>
+            <param name="filter">The criteria by which Trader Infos are searched. 
+                All criteria in the filter are optional.
+            </param>
+            <returns>list of Trader Infos</returns>
+            <response code="200">Returns the array of Trader Infos</response>
+            <response code="4406">If the Trader Infos was not found</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.TraderInfoController.GetAsync(System.String)">
+             <summary>
+             Return Trader Info by a certain id 
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /TraderInfos/{id}
+                 
+             </remarks>
+             <param name="id">TraderInfo's id</param>
+             <returns>trader info model</returns>
+             <response code="200">If successful returned Trader Info</response>
+             <response code="4406">If not found Trader Info</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.TraderInfoController.Delete(System.String)">
+             <summary>
+             Delete Trader Info
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /TraderInfos/{id}
+                 
+             </remarks>
+             <param name="id"> Trader Info's id</param>
+             <returns>Status code</returns>
+             <response code="204">If successful deleted Trader Info</response>
+             <response code="4406">If not found Trader Info</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.TraderInfoController.FollowTrader(System.String)">
+             <summary>
+             Follow trader
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /TraderInfos/{followId}
+                 
+             </remarks>
+             <param name="followId"> Follow Trader Info's id</param>
+             <returns>Status code</returns>
+             <response code="204">If successful updates Trader Info</response>
+             <response code="4406">If not found Follow Trader Info</response> 
+        </member>
+        <member name="M:STP.Profile.API.Controllers.UPLController.SubscribeAsync(System.Int64)">
+             <summary>
+             For internal client only
+             Subscribing for receiving realtime UPL data for some market
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/UPL/subscribe
+                 {
+                     "marketId": 123456
+                  }
+            
+             </remarks>
+             <response code="200">Returns the array of orders</response>
+        </member>
+        <member name="M:STP.Profile.API.Controllers.UPLController.UnsubscribeAsync(System.Int64)">
+             <summary>
+             For internal client only
+             UnSubscribing from receiving realtime UPL data for some market
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST  /api/UPL/unsubscribe
+                 {
+                     "marketId": 123456
+                  }
+                 
+             </remarks>
+             <response code="200">If successful returned order</response>
+        </member>
+    </members>
+</doc>

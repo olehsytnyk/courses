@@ -1,0 +1,9 @@
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\bin\Debug\netcoreapp2.2\STP.Identity.Application.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\bin\Debug\netcoreapp2.2\STP.Identity.Application.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\bin\Debug\netcoreapp2.2\STP.Identity.Application.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\obj\Debug\netcoreapp2.2\STP.Identity.Application.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\obj\Debug\netcoreapp2.2\STP.Identity.Application.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\obj\Debug\netcoreapp2.2\STP.Identity.Application.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\obj\Debug\netcoreapp2.2\STP.Identity.Application.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\obj\Debug\netcoreapp2.2\STP.Identity.Application.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Application\obj\Debug\netcoreapp2.2\STP.Identity.Application.pdb

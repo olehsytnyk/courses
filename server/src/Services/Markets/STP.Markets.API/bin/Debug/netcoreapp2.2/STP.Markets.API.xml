@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STP.Markets.API</name>
+    </assembly>
+    <members>
+        <member name="M:STP.Markets.API.Controllers.MarketsController.GetById(System.Int64)">
+            <summary>
+            Get market by id.
+            </summary>
+            <returns>A market on success. 3404 status code if market with given id does not exist.</returns>
+        </member>
+        <member name="M:STP.Markets.API.Controllers.MarketsController.GetAsync(STP.Markets.Application.MarketFilterDto)">
+            <summary>
+            Get markets that match filter. If filter's field is empty it will not be applied.
+            </summary>
+            <returns>A markets on success. 3404 status code if any markets do not match filter.</returns>
+        </member>
+        <member name="M:STP.Markets.API.Controllers.MarketsController.GetAllAsync">
+            <summary>
+            Returns all markets
+            </summary>
+            <remarks>For internal use only</remarks>
+        </member>
+        <member name="M:STP.Markets.API.Controllers.MarketsController.GetIconAsync(System.Int64)">
+            <summary>
+            Get market`s icon by id.
+            </summary>
+            <returns>A Stream on success. 3404 status code if market with given id does not exist.</returns>
+        </member>
+        <member name="M:WatchlistsController.GetAsync(STP.Markets.Application.WatchlistFilterDto,System.Int32,System.Int32)">
+            <summary>
+            Get watchlists that match filter. If filter's field is empty it will not be applied.
+            </summary>
+            <returns>A watchlists on success. 3404 status code if any watchlists do not match filter.</returns>
+        </member>
+        <member name="M:WatchlistsController.GetById(System.Int64)">
+            <summary>
+            Get watchlist by id.
+            </summary>
+            <returns>A watchlist on success. 3404 status code if watchlist with given id does not exist.</returns>
+        </member>
+        <member name="M:WatchlistsController.Post(STP.Markets.Application.WatchlistPostDto)">
+            <summary>
+            Create new watchlist in database.
+            </summary>
+            <returns>204 status code on success. 400 status code if Name property is empty.</returns>
+        </member>
+        <member name="M:WatchlistsController.Delete(System.Int64)">
+            <summary>
+            Delete watchlist with given id from database.
+            </summary>
+            <returns>204 status code on success. 3404 status code if watchlist with given id does not exist.</returns>
+        </member>
+        <member name="M:WatchlistsController.Patch(System.Int64,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{STP.Markets.Application.WatchlistPatchDto})">
+            <summary>
+            Edit watchlist with given id
+            </summary>
+            <remarks>You can only change name with this method. To add/remove markets from wathclist use Put method</remarks>
+            <returns>200 status code on success.</returns>
+        </member>
+        <member name="M:WatchlistsController.Put(System.Int64,System.Collections.Generic.IEnumerable{STP.Markets.Application.WatchlistPutDto})">
+            <summary>
+                Add or remove item form Markets collection
+            </summary>
+            <param name="id">id of watchlist</param>
+            <param name="watchlistDtos">Objects with properties Action "Add"/"Remove" (0/1) and Id of market in Markets collection</param>
+            <returns>200 status code on success.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STP.Datafeed.API</name>
+    </assembly>
+    <members>
+        <member name="M:STP.Datafeed.API.Controllers.V1.MarketUpdatesController.Subscribe(STP.Common.Models.DatafeedAction)">
+             <summary>
+             Subscribe user to Market Update
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /market-updates
+                 {   
+                     DatafeedAction
+                     [
+                         "marketIds": 5,
+                         "sessionId":"string"
+                     ]
+                 }
+                 
+             </remarks>
+             <param name="datafeedAction"> Market's id and sessionId</param>
+             <returns>boolean value</returns>
+             <response code="200">If successful Subscribed</response>
+             <response code="400">If not successful Subscribed</response> 
+        </member>
+        <member name="M:STP.Datafeed.API.Controllers.V1.MarketUpdatesController.Unsubcribe(STP.Common.Models.DatafeedAction)">
+             <summary>
+             Unsubscribe user from Market Update 
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /market-updates
+                 {   
+                     DatafeedAction
+                     [
+                         "marketIds": 5,
+                         "sessionId":"string"
+                     ]
+                 }
+                 
+             </remarks>
+             <param name="datafeedAction"> Market's id and sessionId</param>
+             <returns>StatusCode</returns>
+             <response code="200">If successful Ubsubscribed</response>
+             <response code="400">If not successful Ubsubscribed</response> 
+        </member>
+        <member name="M:STP.Datafeed.API.Controllers.V1.MarketUpdatesController.GetLastUpdateMarketById(System.Int64)">
+             <summary>
+             GET Market Update 
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /market-updates/{marketId}
+                 
+             </remarks>
+             <param name="marketId"> Market's Id</param>
+             <returns>list of market-updates</returns>
+             <response code="200">If successful return market update</response>
+        </member>
+    </members>
+</doc>

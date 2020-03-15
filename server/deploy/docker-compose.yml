@@ -1,0 +1,158 @@
+version: '3.7'
+
+services:
+  watchtower:
+    image: v2tec/watchtower
+    container_name: watchtower
+    restart: always
+    #networks:
+  #    - internal
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.docker/config.json:/config.json:ro
+    command:
+      -- interval 300
+      -- cleanup
+
+  stp_mysql:
+    image: mysql:8
+    container_name: stp_mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=XhhMjv6kNHYuFm
+
+  stp_rabbitmq:
+    image: rabbitmq:3-management
+    hostname: stp_rabbitmq
+    container_name: stp_rabbitmq
+    restart: always
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+      - RABBITMQ_DEFAULT_VHOST=/
+
+  stp_identity:
+    image: registry.git.magnise.com/courses/social-trading-platform/server/identity:develop
+    container_name: stp_identity
+    restart: always
+    depends_on:
+      - stp_mysql
+      - stp_rabbitmq
+    ports:
+      - "15675:80"
+    environment:
+      - ConnectionStrings:DefaultConnection=server=stp_mysql;UserId=root;Password=XhhMjv6kNHYuFm;database=stp.users;
+      - OAuthOptions:AuthServer=http://178.238.232.196:15675
+      - RabbitMQOptions:Port=5673
+      - RabbitMQOptions:HostName=178.238.232.196
+      - RabbitMQOptions:UserName=guest
+      - RabbitMQOptions:Password=guest
+      - RabbitMQOptions:VirtualHost=/
+    volumes:
+      - ./Logs/Identity:/app/Logs
+      - ./files/images:/app/avatars
+
+  stp_markets:
+    image: registry.git.magnise.com/courses/social-trading-platform/server/markets:develop
+    container_name: stp_markets
+    restart: always
+    depends_on:
+      - stp_mysql
+      - stp_rabbitmq
+      - stp_identity
+    ports:
+      - "15676:80"
+    environment:
+      - ConnectionStrings:DefaultConnection=server=stp_mysql;UserId=root;Password=XhhMjv6kNHYuFm;database=stp.markets;
+      - OAuthOptions:AuthServer=http://178.238.232.196:15675
+      - RabbitMq:HostName=stp_rabbitmq
+    volumes:
+      - ./Logs/Markets:/app/Logs
+      - ./files/Icons:/app/Icons
+
+  stp_datafeed:
+    image: registry.git.magnise.com/courses/social-trading-platform/server/datafeed:develop
+    container_name: stp_datafeed
+    restart: always
+    depends_on:
+      - stp_mysql
+      - stp_rabbitmq
+      - stp_identity
+      - stp_markets
+    ports:
+      - "15677:80"
+    environment:
+      - OAuthOptions:AuthServer=http://178.238.232.196:15675
+      - HttpServiceOptions:ApiMarketsUrl=http://178.238.232.196:15676
+      - HttpServiceOptions:ApiDatafeedUrl=http://178.238.232.196:15677
+      - HttpServiceOptions:ApiProfileUrl=http://178.238.232.196:15678
+      - RabbitMQOptions:Port=5673
+      - RabbitMQOptions:HostName=178.238.232.196
+      - RabbitMQOptions:UserName=guest
+      - RabbitMQOptions:Password=guest
+      - RabbitMQOptions:VirtualHost=/
+      - Generator:Frequency=200
+    volumes:
+      - ./Logs/Datafeed:/app/Logs
+
+  stp_profile:
+    image: registry.git.magnise.com/courses/social-trading-platform/server/profile:develop
+    container_name: stp_profile
+    restart: always
+    depends_on:
+      - stp_mysql
+      - stp_rabbitmq
+      - stp_identity
+      - stp_markets
+      - stp_datafeed
+    ports:
+      - "15678:80"
+    environment:
+      - ConnectionStrings:DefaultConnection=server=stp_mysql;UserId=root;Password=XhhMjv6kNHYuFm;database=stp.profile;
+      - OAuthOptions:AuthServer=http://178.238.232.196:15675
+      - HttpServiceOptions:ApiMarketsUrl=http://178.238.232.196:15676
+      - HttpServiceOptions:ApiDatafeedUrl=http://178.238.232.196:15677
+      - HttpServiceOptions:ApiProfileUrl=http://178.238.232.196:15678
+      - RabbitMQOptions:Port=5673
+      - RabbitMQOptions:HostName=178.238.232.196
+      - RabbitMQOptions:UserName=guest
+      - RabbitMQOptions:Password=guest
+      - RabbitMQOptions:VirtualHost=/
+    volumes:
+      - ./Logs/Profile:/app/Logs
+
+  stp_realtime:
+    image: registry.git.magnise.com/courses/social-trading-platform/server/realtime:develop
+    container_name: stp_realtime
+    restart: always
+    depends_on:
+      - stp_mysql
+      - stp_rabbitmq
+      - stp_identity
+    ports:
+      - "15679:80"
+    environment:
+      - OAuthOptions:AuthServer=http://178.238.232.196:15675
+      - HttpServiceOptions:ApiMarketsUrl=http://178.238.232.196:15676
+      - HttpServiceOptions:ApiDatafeedUrl=http://178.238.232.196:15677
+      - HttpServiceOptions:ApiProfileUrl=http://178.238.232.196:15678
+      - RabbitMQOptions:Port=5673
+      - RabbitMQOptions:HostName=178.238.232.196
+      - RabbitMQOptions:UserName=guest
+      - RabbitMQOptions:Password=guest
+      - RabbitMQOptions:VirtualHost=/
+    volumes:
+      - ./Logs/Realtime:/app/Logs
+
+  web:
+    image: registry.git.magnise.com/courses/social-trading-platform/web:develop
+    container_name: stp_web
+    ports:
+      - "15685:4000"

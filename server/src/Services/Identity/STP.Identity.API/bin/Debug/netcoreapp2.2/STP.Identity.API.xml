@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STP.Identity.API</name>
+    </assembly>
+    <members>
+        <member name="M:STP.Identity.API.Controllers.UserAvatarController.GetUserAvatar(System.String)">
+             <summary>
+             Get user avatar
+             </summary>
+            <remarks>
+             Sample request:
+            
+                 Get /avatar/{id}  
+             </remarks>
+             <param name="id">id user</param>
+             <returns>FileSream</returns>
+             <response code="200">If successful returned user avatar</response>
+             <response code="404">If not found item of users</response>
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserAvatarController.PostUserUploadAvatar(STP.Common.Models.UploadFileDTO)">
+            <summary>
+            Upload a user avatar
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+            <response code="200">If successful request</response>
+            <response code="2410">If couldn't update user avatar</response>
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.GetUsers(System.Int32,System.Int32)">
+             <summary>
+             Return list of Users
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /users
+                 
+             </remarks>
+             <param name="page">page</param>
+             <param name="pageSize">page size</param>
+             <returns>list of Users</returns>
+             <response code="200">If successful returned list of users</response>
+             <response code="404">If not found item of users</response> 
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.SearchUsers(System.String)">
+             <summary>
+             Return list of Users
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /users/search/{id}
+                 
+             </remarks>
+             <param name="text"> user's id</param>
+             <returns>list of Users</returns>
+             <response code="200">If successful returned list of users</response>
+             <response code="404">If not found item of users</response> 
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.GetUserById(System.String)">
+             <summary>
+             Return user
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /users/{id}
+                 
+             </remarks>
+             <param name="id"> user's id</param>
+             <returns>user</returns>
+             <response code="200">If successful returned list of users</response>
+             <response code="404">If not found item of users</response> 
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.CreateUser(STP.Identity.Domain.DTOs.User.CreateUserDto)">
+             <summary>
+             Create a new User
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /users
+                 {
+                     "UserName": "Vasy_Pupkin",
+                     "Email": "Pupkin@Vasy.com",
+                     "Password": "ffnfnhD43$",
+                     "PasswordConfirm": "ffnfnhD43$"
+                 }
+                 
+             </remarks>
+             <param name="userDto">user's dto</param>
+             <returns>Created user</returns>
+             <response code="200">If successful created new user</response>
+             <response code="400">If didn't creat new user</response> 
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.PatchUser(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{STP.Identity.Domain.DTOs.User.UpdateUserDto})">
+             <summary>
+             Patch User
+             </summary>
+             <remarks>
+             Samples request:
+            
+                 PATCH: /users
+                 {
+                     [
+                         {"op": "replace", "path": "/FirstName", "value": "Bob"},
+                         {"op": "add", "path": "/foo", "value": "Bob"},
+                         {"op": "remove", "path": "/foo" }
+                     ]
+                 }  
+                 
+             </remarks>
+             <param name="userPatch"> user's dto</param>
+             <returns>Patched user</returns>
+             <response code="200">If successful patched user</response> 
+             <response code="400">If didn't patch user</response> 
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.DeleteUser">
+             <summary>
+             Delete a specific user.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE: /users
+                 
+             </remarks>
+             <returns>Status code</returns>
+             <response code="204">If successful delated user</response>
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.PutUser(STP.Identity.Domain.DTOs.User.UpdateUserDto)">
+             <summary>
+             Put User
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /users
+                 {
+                     "UserName": "username",
+                     "FirstName": "name1",
+                     "LastName": "lastname1",
+                     "Gender": "0",
+                     "DateOfBirth": 345
+                 }
+                 
+             </remarks>
+             <param name="userDto"> user's dto</param>
+             <returns>Status code</returns>
+             <response code="200">If successful puted user</response>
+             <response code="400">If failed to put user</response>
+        </member>
+        <member name="M:STP.Identity.API.Controllers.UserController.ChangePasswordUser(STP.Identity.Domain.DTOs.ChangePasswordDto)">
+             <summary>
+             Change password current user
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /users/changepassword
+                 {
+                     "OldPassword": "Pass123$",
+                     "NewPassword": "NewPass123$",
+                     "ConfirmNewPassword": "NewPass123$"
+                 }
+                 
+             </remarks>
+             <param name="changePasswordDto">ChangePasswordDto</param>
+             <returns>Status code</returns>
+             <response code="200">If successful changed user's password</response>
+             <response code="400">If failed changed user's password</response>
+        </member>
+    </members>
+</doc>

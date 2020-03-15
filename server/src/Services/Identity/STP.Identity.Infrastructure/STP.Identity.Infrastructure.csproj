@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.6" />
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\STP.Common\STP.Common.csproj" />
+    <ProjectReference Include="..\..\..\STP.Infrastructure\STP.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\STP.Interfaces\STP.Interfaces.csproj" />
+    <ProjectReference Include="..\STP.Identity.Domain\STP.Identity.Domain.csproj" />
+    <ProjectReference Include="..\STP.Identity.Persistence\STP.Identity.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

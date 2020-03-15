@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "02bbad3013da37d5dbd8694efa633dd02f60fa52"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "STP.Realtime.Abstraction/1.0.0": {
+        "dependencies": {
+          "STP.Interfaces": "1.0.0",
+          "STP.Realtime.Common": "1.0.0"
+        },
+        "runtime": {
+          "STP.Realtime.Abstraction.dll": {}
+        }
+      },
+      "FluentValidation/8.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.4.0.0"
+          }
+        }
+      },
+      "STP.Interfaces/1.0.0": {
+        "runtime": {
+          "STP.Interfaces.dll": {}
+        }
+      },
+      "STP.Realtime.Common/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "8.4.0"
+        },
+        "runtime": {
+          "STP.Realtime.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "STP.Realtime.Abstraction/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/VApywgD2sqD3aB1tzub6SIItmwxXN0D5yAiP3kuFHmjYO1W+Ryi531/m4O03/hlfcYrBgewDJn7Jd1Xk0vTdw==",
+      "path": "fluentvalidation/8.4.0",
+      "hashPath": "fluentvalidation.8.4.0.nupkg.sha512"
+    },
+    "STP.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "STP.Realtime.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

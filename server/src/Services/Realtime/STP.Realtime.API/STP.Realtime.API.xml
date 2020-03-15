@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>STP.Realtime.API</name>
+    </assembly>
+    <members>
+        <member name="M:STP.Realtime.API.Controllers.RealtimeController.GetConnectionId">
+             <summary>
+             Authorize User for receiving ConnectionID for WebSocketConnection
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/realtime/connect
+             </remarks>
+             <response code="200">If successful authorized. As result, we receiving connectionId </response>
+        </member>
+    </members>
+</doc>

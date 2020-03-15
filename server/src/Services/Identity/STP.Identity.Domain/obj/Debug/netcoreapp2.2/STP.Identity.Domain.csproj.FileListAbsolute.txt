@@ -1,0 +1,14 @@
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Identity.Domain.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Identity.Domain.runtimeconfig.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Identity.Domain.runtimeconfig.dev.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Identity.Domain.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Identity.Domain.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Interfaces.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\bin\Debug\netcoreapp2.2\STP.Interfaces.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.csproj.CopyComplete
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Identity\STP.Identity.Domain\obj\Debug\netcoreapp2.2\STP.Identity.Domain.pdb

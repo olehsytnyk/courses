@@ -1,0 +1,12 @@
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\bin\Debug\netstandard2.0\STP.Messages.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\bin\Debug\netstandard2.0\STP.Messages.dll
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\bin\Debug\netstandard2.0\STP.Messages.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\bin\Debug\netstandard2.0\STP.Interfaces.dll
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\bin\Debug\netstandard2.0\STP.Interfaces.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.csproj.CopyComplete
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.dll
+C:\Users\olexd\Desktop\Magnise\server\src\STP.Messages\obj\Debug\netstandard2.0\STP.Messages.pdb

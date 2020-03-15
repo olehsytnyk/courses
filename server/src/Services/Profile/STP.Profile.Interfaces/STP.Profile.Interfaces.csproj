@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\STP.Common\STP.Common.csproj" />
+    <ProjectReference Include="..\..\..\STP.Interfaces\STP.Interfaces.csproj" />
+    <ProjectReference Include="..\STP.Profile.Domain\STP.Profile.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

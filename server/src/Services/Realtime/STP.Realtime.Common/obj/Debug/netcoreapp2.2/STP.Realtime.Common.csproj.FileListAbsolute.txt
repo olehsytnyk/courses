@@ -1,0 +1,9 @@
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\bin\Debug\netcoreapp2.2\STP.Realtime.Common.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\bin\Debug\netcoreapp2.2\STP.Realtime.Common.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\bin\Debug\netcoreapp2.2\STP.Realtime.Common.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\obj\Debug\netcoreapp2.2\STP.Realtime.Common.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\obj\Debug\netcoreapp2.2\STP.Realtime.Common.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\obj\Debug\netcoreapp2.2\STP.Realtime.Common.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\obj\Debug\netcoreapp2.2\STP.Realtime.Common.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\obj\Debug\netcoreapp2.2\STP.Realtime.Common.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Common\obj\Debug\netcoreapp2.2\STP.Realtime.Common.pdb

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.8.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\STP.Infrastructure\STP.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\STP.Interfaces\STP.Interfaces.csproj" />
+    <ProjectReference Include="..\STP.Profile.Domain\STP.Profile.Domain.csproj" />
+    <ProjectReference Include="..\STP.Profile.Interfaces\STP.Profile.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

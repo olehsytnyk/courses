@@ -1,0 +1,162 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "3a7f65be9ec8048cc0597687da87542f9e4ff42b"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "STP.Identity.Domain/1.0.0": {
+        "dependencies": {
+          "IdentityServer4": "2.5.0",
+          "IdentityServer4.AspNetIdentity": "2.5.0",
+          "IdentityServer4.EntityFramework": "2.5.0",
+          "STP.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "STP.Identity.Domain.dll": {}
+        }
+      },
+      "AutoMapper/8.1.1": {
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "8.1.1.0",
+            "fileVersion": "8.1.1.0"
+          }
+        }
+      },
+      "IdentityModel/3.10.10": {
+        "runtime": {
+          "lib/netstandard2.0/IdentityModel.dll": {
+            "assemblyVersion": "3.10.10.0",
+            "fileVersion": "3.10.10.0"
+          }
+        }
+      },
+      "IdentityServer4/2.5.0": {
+        "dependencies": {
+          "IdentityModel": "3.10.10",
+          "IdentityServer4.Storage": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "IdentityServer4.AspNetIdentity/2.5.0": {
+        "dependencies": {
+          "IdentityServer4": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.AspNetIdentity.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "IdentityServer4.EntityFramework/2.5.0": {
+        "dependencies": {
+          "IdentityServer4": "2.5.0",
+          "IdentityServer4.EntityFramework.Storage": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.EntityFramework.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "IdentityServer4.EntityFramework.Storage/2.5.0": {
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "IdentityServer4.Storage": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.EntityFramework.Storage.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "IdentityServer4.Storage/2.5.0": {
+        "dependencies": {
+          "IdentityModel": "3.10.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityServer4.Storage.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
+      "STP.Interfaces/1.0.0": {
+        "runtime": {
+          "STP.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "STP.Identity.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/8.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
+      "path": "automapper/8.1.1",
+      "hashPath": "automapper.8.1.1.nupkg.sha512"
+    },
+    "IdentityModel/3.10.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1CZDkFEZC5hU615GrTXLoamLlLlZVNURnjbdjELw3keSRcPufSIwP5NI0f8quUBV/beuKy9yIqYemmMIDIY87w==",
+      "path": "identitymodel/3.10.10",
+      "hashPath": "identitymodel.3.10.10.nupkg.sha512"
+    },
+    "IdentityServer4/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IgXtZJnyrdC+zv7DSk0e0teDbNurid1yYOj/DWf5JitN7qUz+xmUMPIh3mXy7IUyLofGnmFfvbOfoUKZY5sy6g==",
+      "path": "identityserver4/2.5.0",
+      "hashPath": "identityserver4.2.5.0.nupkg.sha512"
+    },
+    "IdentityServer4.AspNetIdentity/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-go54gqRZuRCuP5edwM8vS3DsFW40i9E1OC+TZI9OA3c4jrJQwSBs3h+FAwDijyY/Kj9I4timN92Q5lyKBb16Eg==",
+      "path": "identityserver4.aspnetidentity/2.5.0",
+      "hashPath": "identityserver4.aspnetidentity.2.5.0.nupkg.sha512"
+    },
+    "IdentityServer4.EntityFramework/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2WlmqbfiExFdaePJCgiemAFqe3YAbnXx1K3a6vryHnETRtEnNQj/mhUBcOOjtqkfCnoZt6wS6YzDVG90Q9xETw==",
+      "path": "identityserver4.entityframework/2.5.0",
+      "hashPath": "identityserver4.entityframework.2.5.0.nupkg.sha512"
+    },
+    "IdentityServer4.EntityFramework.Storage/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a7+AFHTnlPYvtV3a/9QGM70AzWjUMYR5IKxRH9erq/XBFEn4RukbfNw4m0qDXUhM1O4QzEtoZUb0OF9167OeOQ==",
+      "path": "identityserver4.entityframework.storage/2.5.0",
+      "hashPath": "identityserver4.entityframework.storage.2.5.0.nupkg.sha512"
+    },
+    "IdentityServer4.Storage/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-phhkhDcGfxLquNZA2biFt5S5XIUy0QUeD1c0dMfsdW3Lf4OdW47eO/YbpR3rxhBXKem25NmS6W3OAOXo94TIyw==",
+      "path": "identityserver4.storage/2.5.0",
+      "hashPath": "identityserver4.storage.2.5.0.nupkg.sha512"
+    },
+    "STP.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

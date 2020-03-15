@@ -1,0 +1,47 @@
+stages:
+  - deploy
+
+variables:
+  IMAGE_IDENTITY: identity
+  IMAGE_MARKETS: markets
+  IMAGE_DATAFEED: datafeed
+  IMAGE_PROFILE: profile
+  IMAGE_REALTIME: realtime
+  
+#Server
+
+.server: &server
+  image: $SERVER_DOCKER_BUILD_IMAGE
+  tags:
+    - docker
+
+.build-server-docker-images: &build-server-docker-images
+  <<: *server
+  stage: deploy
+  before_script:
+    - dockerd-entrypoint.sh & sleep 10
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+  script:
+    - docker --version
+    - docker-compose --version
+    - docker-compose build --force-rm
+
+    - set -- $IMAGE_IDENTITY $IMAGE_MARKETS $IMAGE_DATAFEED $IMAGE_PROFILE $IMAGE_REALTIME
+    - >
+      for image; do
+        REGISTRY_IMAGE=$REGISTRY/$image:$TAG
+        docker tag $image $REGISTRY_IMAGE
+
+        docker push $REGISTRY_IMAGE
+      done
+  after_script:
+    - docker logout
+
+deploy-docker-server-develop:
+  <<: *build-server-docker-images
+  variables:
+    TAG: develop
+  only:
+    - develop@courses/social-trading-platform/server
+
+#end Server

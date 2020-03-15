@@ -1,0 +1,12 @@
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\bin\Debug\netcoreapp2.2\STP.Datafeed.Domain.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\bin\Debug\netcoreapp2.2\STP.Datafeed.Domain.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\bin\Debug\netcoreapp2.2\STP.Datafeed.Domain.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\bin\Debug\netcoreapp2.2\STP.Interfaces.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\bin\Debug\netcoreapp2.2\STP.Interfaces.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.csproj.CopyComplete
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Datafeed\STP.Datafeed.Domain\obj\Debug\netcoreapp2.2\STP.Datafeed.Domain.pdb

@@ -1,0 +1,16 @@
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Abstraction.deps.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Abstraction.runtimeconfig.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Abstraction.runtimeconfig.dev.json
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Abstraction.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Abstraction.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Interfaces.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Common.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Interfaces.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\bin\Debug\netcoreapp2.2\STP.Realtime.Common.pdb
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.csprojAssemblyReference.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.csproj.CoreCompileInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.AssemblyInfoInputs.cache
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.AssemblyInfo.cs
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.csproj.CopyComplete
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.dll
+C:\Users\olexd\Desktop\Magnise\server\src\Services\Realtime\STP.Realtime.Abstraction\obj\Debug\netcoreapp2.2\STP.Realtime.Abstraction.pdb
